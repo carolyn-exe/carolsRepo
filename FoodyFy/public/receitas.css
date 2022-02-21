@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+body {
+
+    background: ghostwhite;
+}
+
+header {
+    padding: 32px;
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+    margin: 0 auto;
+    width: 940px;
+}
+
+.links{
+    margin: auto 0;
+} 
+
+.links a {
+    padding: 30px;    
+    text-decoration: none;
+    line-height: 18px;
+    font-family: Roboto;
+    font-size: 16px;
+    color: #111111;
+    margin: auto 0;
+}
+
+.links a:hover {
+    color: rgba(0, 0, 0, 0.4);
+    transition: 200ms;
+} 
+
+/*CARDS SECTION*/
+
+.principais {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 24px;
+    color: #111111;
+    padding: 30px;
+    padding-left: 0;
+   
+}
+
+.cards, .principais {
+    max-width: 940px;
+    margin: auto auto 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    
+}
+
+section .card {
+    background-color: var(--color-green);
+    max-width: 600px;
+}
+
+.foto img {
+    width: 100%;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.receita {
+    font-family: Roboto;
+    font-size: 18px;
+    color: #111111; 
+    margin: 10px 0;
+}
+
+.autor {
+    font-family: Roboto;
+    font-size: 14px;
+    color: #777777;
+}
+
+/* ==== MODAL ==== */
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: white;
+    width: 660px;
+    max-width: 100%;
+    height: 413px;
+    margin: 30vh auto;
+    border-radius: 16px;
+    position: relative;
+
+}
+
+.modal .fechar{
+    font-family: Roboto;
+    font-size: 20px;
+    color: #999999;
+    position: absolute;
+    bottom: 30px;
+    left: 45.41%;
+    cursor: pointer;
+}
+
+/* MODAL ATIVO */
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    text-align: center;
+}
+
+.modal-content > .foto img {
+    border-radius: 15px;
+    width: 600px;
+    height: 200px;
+    margin-top: 30px;
+
+}
+
+.modal-content > .receita p {
+    font-family: Roboto;
+    font-size: 24px;
+    color: #111111;
+}
+
+.modal-content > .autor p {
+    font-family: Roboto;
+    font-size: 21px;
+    color: #777777;
+}
+
+/* FOOTER */
+
+footer {
+    background: #EEEEEE;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+footer p {
+    font-family: Roboto-Regular;
+    font-size: 14px;
+    color: #999999;
+    text-align: center;
+}
+
